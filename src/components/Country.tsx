@@ -14,7 +14,12 @@ import { MdShareLocation } from "react-icons/md";
 import Weather from "./Weather";
 
 type CountryProps = {
-  country: object;
+  country: {
+    name: string;
+    population: number;
+    latlng: string[];
+    flag: string;
+  };
   countryName: string;
   countryCapital: string;
   weather: object;
